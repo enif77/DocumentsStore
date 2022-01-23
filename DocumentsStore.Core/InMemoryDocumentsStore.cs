@@ -1,6 +1,5 @@
 ﻿namespace DocumentsStore.Core;
 
-
 /// <summary>
 /// Documents store, that stores documents in memory.
 /// </summary>

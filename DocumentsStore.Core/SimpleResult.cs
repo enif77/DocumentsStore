@@ -1,6 +1,5 @@
 ﻿namespace DocumentsStore.Core;
 
-
 public static class SimpleResult
 {
     public static IResult Ok(string? message = "Ok")

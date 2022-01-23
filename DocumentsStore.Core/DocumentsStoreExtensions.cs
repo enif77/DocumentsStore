@@ -1,6 +1,5 @@
 ﻿namespace DocumentsStore.Core;
 
-
 /// <summary>
 /// Documents store helper methods.
 /// </summary>
@@ -73,13 +72,12 @@ public static class DocumentsStoreExtensions
 
     /// <summary>
     /// Archives a document into a defined store.
-    /// A document is saved to a target documents store and removed from this documents s tore.
-    /// The archive documents store must be openned.
+    /// A document is saved to a target documents store and removed from this documents store.
     /// </summary>
     /// <param name="store">A documents store.</param>
     /// <param name="documentName">A document name.</param>
     /// <param name="archive">An archiving document store.</param>
-    /// <returns>An IResult instance signaling, wether this operation succeeded or not.</returns>
+    /// <returns>An IResult instance signaling, whether this operation succeeded or not.</returns>
     public static IResult Archive(this IDocumentsStore store, string documentName, IDocumentsStore archive)
     {
         if (string.IsNullOrEmpty(documentName)) return SimpleResult.Error("A document name expected.");

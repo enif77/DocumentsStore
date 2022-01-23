@@ -1,6 +1,5 @@
 ﻿namespace DocumentsStore.Core;
 
-
 public class Result<T> : IResult<T>
 {
     public bool IsSuccess { get; }
