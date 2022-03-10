@@ -1,4 +1,9 @@
-﻿namespace DocumentsStore.Core;
+﻿/* DocumentsStore - (C) 2022 Premysl Fara  */
+
+namespace DocumentsStore.Core;
+
+using System;
+
 
 /// <summary>
 /// A document.
@@ -25,9 +30,10 @@ public class Document : IDocument
     public Document(string name, byte[] content)
     {
         if (string.IsNullOrEmpty(name)) throw new ArgumentException("A document name expected.", nameof(name));
-
+        if (content == null) throw new ArgumentNullException(nameof(content));
+        
         Name = name;
-        Content = content ?? throw new ArgumentNullException(nameof(content));
+        Content = content;
     }
 
 

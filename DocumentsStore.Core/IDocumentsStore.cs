@@ -1,4 +1,9 @@
-﻿namespace DocumentsStore.Core;
+﻿/* DocumentsStore - (C) 2022 Premysl Fara  */
+
+namespace DocumentsStore.Core;
+
+using System.Collections.Generic;
+
 
 /// <summary>
 /// Defines a documents store.
